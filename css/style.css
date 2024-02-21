@@ -1,0 +1,437 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+main {
+    width: 100%;
+    min-height: fit-content;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.btn-one{
+    background-color: var(--Strong-Cyan);
+    -webkit-box-shadow: 0px 3px 0px 1px rgba(34,186,162,1);
+    -moz-box-shadow: 0px 3px 0px 1px rgb(26, 145, 127);
+    box-shadow: 0px 3px 0px 1px rgb(28, 155, 136);
+}
+.btn-two{
+    background-color: var(--Light-Blue);
+    -webkit-box-shadow: 0px 3px 0px 1px rgba(97,115,255,1);
+    -moz-box-shadow: 0px 3px 0px 1px rgba(97,115,255,1);
+    box-shadow: 0px 3px 0px 1px rgb(77, 92, 206);
+}
+/* Start Header */
+main header {
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 120px 0;
+}
+main header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main .hero .text {
+    display: flex;
+    margin-top: 30px;
+    width: fit-content;
+}
+main .hero .text h1 {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+    font-size: 45px;
+    margin-top: 30px;
+    text-align: center;
+}
+main .hero .text p {
+    color: var(--Grayish-Blue);
+    max-width: 700px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+main header div:not(.buttons){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* End Header */
+/* Start Track */
+main .track {
+    padding: 40px 0;
+}
+main .track .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+main .track .title h2 {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+    font-size: 38px;
+}
+main .track .title p {
+    max-width: 630px;
+    line-height: 1.6;
+    color: var(--Grayish-Blue);
+}
+main .track .split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .track .split img {
+    width: 50%;
+    position: relative;
+    left: -35px;
+}
+main .track .split .features {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+main .track .split .features .feat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+main .track .split .features .feat span {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--Dark-Grayish-Blue);
+
+}
+main .track .split .features .feat p  {
+    color: var(--Grayish-Blue);
+    line-height: 2;
+}
+/* End Track */
+
+/* Start Clipboard */
+main .clipboard {
+    margin-top: 150px;
+}
+main .clipboard .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+main .clipboard .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+main .clipboard .title h3 {
+    font-size: 38px;
+    color: var(--Dark-Grayish-Blue);
+}
+main .clipboard .title p {
+    color: var(--Grayish-Blue);
+    line-height: 1.6;
+}
+/* End Clipboard */
+
+/* Start Workflow */
+main .workflow {
+    margin-top: 100px;
+    padding: 100px 0;
+}
+main .workflow .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .workflow  h4 {
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 38px;
+}
+main .workflow p {
+    color: var(--Grayish-Blue);
+    margin-top: 15px;
+}
+main .workflow .boxes {
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+main .workflow .boxes .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    width: 30%;
+    gap: 10px;
+    text-align: center;
+}
+main .workflow .boxes .box img {
+    width: 50px;
+}
+main .workflow .boxes .box span {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 20px;
+}
+main .workflow .boxes .box p {
+    line-height: 2;
+    font-size: 18px;
+    max-width: 85%;
+}
+main .workflow .logos {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center
+}
+/* End Workflow */
+
+/* Start Sugg */
+main .sugg .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+main .sugg h5 {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+    font-size: 38px;
+}
+main .sugg p {
+    line-height: 2;
+    font-size: 18px;
+    max-width: 45%;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin-top: 15px;
+}
+/* End Sugg */
+
+/* Start Footer */
+footer {
+    background-color: #F5F6F8;
+    padding: 50px 0;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .logo img {
+    width: 50px;
+}
+footer .about {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+footer .about .line {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--Dark-Grayish-Blue);
+}
+footer .links {
+    width: fit-content;
+    display: flex;
+    gap: 25px
+}
+/* End Footer */
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons button {
+        width: 100%;
+    }
+    main .track .split {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+    main .track .split img {
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+    main .track .split .features {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 80px;
+    }
+    main .track .split .features .feat {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main .clipboard .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    main .clipboard .title {
+        width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+    main .clipboard .title h3 {
+        font-size: 25px;
+        text-align: center;
+        color: var(--Dark-Grayish-Blue);
+    }
+    main .clipboard img {
+        max-width: 100%;
+    }
+    main .workflow {
+        margin-top: 100px;
+        padding: 100px 0;
+    }
+    main .workflow .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .workflow  h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+    main .workflow p {
+        text-align: center;
+    }
+    main .workflow .boxes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    main .workflow .boxes .box {
+        width: fit-content;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    main .workflow .boxes .box img {
+        width: 50px;
+    }
+    main .workflow .boxes .box span {
+        font-size: 20px;
+    }
+    main .workflow .logos {
+        flex-direction: column;
+        gap: 50px;
+    }
+    main .sugg h5 {
+        font-size: 27px;
+        text-align: center;
+    }
+    main .sugg p {
+        max-width: 100%;
+    }
+    main .sugg .buttons {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    footer {
+        background-color: #F5F6F8;
+        padding: 50px 0;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .logo img {
+        margin-bottom: 20px;
+    }
+    footer .about {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 22px;
+        gap: 50px;
+        margin: 50px 0;
+    }
+    footer .about .line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--Dark-Grayish-Blue);
+        gap: 50px;
+    }
+    footer .links {
+        margin-top: 20px;
+    }
+}
